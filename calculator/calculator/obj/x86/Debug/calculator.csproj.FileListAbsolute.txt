@@ -6,3 +6,11 @@ c:\users\administrator\documents\visual studio 2010\Projects\calculator\calculat
 c:\users\administrator\documents\visual studio 2010\Projects\calculator\calculator\obj\x86\Debug\calculator.pdb
 c:\users\administrator\documents\visual studio 2010\Projects\calculator\calculator\obj\x86\Debug\calculator.frmMain.resources
 C:\Users\Administrator\documents\visual studio 2010\Projects\calculator\calculator\obj\x86\Debug\calculator.csprojResolveAssemblyReference.cache
+D:\HoangPhiHung_VoManhHung\calculator\calculator\obj\x86\Debug\calculator.exe
+D:\HoangPhiHung_VoManhHung\calculator\calculator\obj\x86\Debug\calculator.pdb
+D:\HoangPhiHung_VoManhHung\calculator\calculator\bin\Debug\calculator.exe
+D:\HoangPhiHung_VoManhHung\calculator\calculator\bin\Debug\calculator.pdb
+D:\HoangPhiHung_VoManhHung\calculator\calculator\obj\x86\Debug\calculator.csprojResolveAssemblyReference.cache
+D:\HoangPhiHung_VoManhHung\calculator\calculator\obj\x86\Debug\calculator.frmMain.resources
+D:\HoangPhiHung_VoManhHung\calculator\calculator\obj\x86\Debug\calculator.Properties.Resources.resources
+D:\HoangPhiHung_VoManhHung\calculator\calculator\obj\x86\Debug\calculator.csproj.GenerateResource.Cache
