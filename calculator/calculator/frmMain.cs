@@ -11,10 +11,11 @@ namespace calculator
 {
     public partial class frmMain : Form
     {
-        double save1,save2, MS;
+        double save1,save2, save3,MS;
         string savepheptinh;
         bool isTypingNumber = false;
         bool isphay = true;
+        bool ispheptinh = true;
         public frmMain()
         {
             
@@ -177,50 +178,81 @@ namespace calculator
         // phép tính
         private void btncong_Click(object sender, EventArgs e)
         {
-            save1 = double.Parse(lblDisplay.Text);
-            savepheptinh = "+";
-            lblDisplay.Text = "0";
-            isTypingNumber = false;
-
+          
+                save1 = double.Parse(lblDisplay.Text);
+                savepheptinh = "+";
+                isTypingNumber = false;
+                if (lblthongso.Text != "")
+                {
+                    lblthongso.Text = lblthongso.Text + save1.ToString() + savepheptinh;
+                }
+                else { lblthongso.Text = save1.ToString() + savepheptinh; }
+                save2 = (save2 + save1);
+          
         }
 
         private void btntru_Click(object sender, EventArgs e)
         {
             save1 = double.Parse(lblDisplay.Text);
             savepheptinh = "-";
-            lblDisplay.Text = "0";
             isTypingNumber = false;
+            if (lblthongso.Text != "")
+            {
+                lblthongso.Text = lblthongso.Text + save1.ToString() + savepheptinh;
+            }
+            else { lblthongso.Text = save1.ToString() + savepheptinh; }
+            if (save2 == 0)
+                save2 = (save1);
+            else
+            {
+                save2 = (save2 - save1);
+            }
         }
 
         private void btnnhan_Click(object sender, EventArgs e)
         {
             save1 = double.Parse(lblDisplay.Text);
             savepheptinh = "*";
-            lblDisplay.Text = "0"; 
             isTypingNumber = false;
+            if (lblthongso.Text != "")
+            {
+                lblthongso.Text = lblthongso.Text + save1.ToString() + savepheptinh;
+            }
+            else { lblthongso.Text = save1.ToString() + savepheptinh; ispheptinh = false; }
+            save2 = (save2 *save1);
         }
 
         private void btnchia_Click(object sender, EventArgs e)
         {
             save1 = double.Parse(lblDisplay.Text);
             savepheptinh = "/";
-            lblDisplay.Text = "0";
             isTypingNumber = false;
+            if (lblthongso.Text != "")
+            {
+                lblthongso.Text = lblthongso.Text + save1.ToString() + savepheptinh;
+            }
+            else { lblthongso.Text = save1.ToString() + savepheptinh; }
+            save2 = save2 / save1;
         }
         //dấu bằng
         private void btnbang_Click(object sender, EventArgs e)
         {
-            switch (savepheptinh)
-            {
-                case "+": lblDisplay.Text = (double.Parse(lblDisplay.Text) + save1).ToString(); break;
-                case "-": lblDisplay.Text = (save1-double.Parse(lblDisplay.Text)).ToString(); break;
-                case "*": lblDisplay.Text = (save1*double.Parse(lblDisplay.Text)).ToString(); break;
-                case "/": lblDisplay.Text = (save1 /double.Parse(lblDisplay.Text)).ToString(); break;
-                default: break;
-            }
-           
+
+            if (isTypingNumber) {  save3 = double.Parse(lblDisplay.Text); } else { }
+                switch (savepheptinh)
+                {
+                    case "+": lblDisplay.Text = (save2 + double.Parse(lblDisplay.Text)).ToString(); save2 = save3; break;
+                    case "-": lblDisplay.Text = (save2 - save3).ToString(); save2 = double.Parse(lblDisplay.Text); break;
+                    case "*": lblDisplay.Text = (save2 * double.Parse(lblDisplay.Text)).ToString(); save2 = save3; break;
+                    case "/": lblDisplay.Text = (save2 / double.Parse(lblDisplay.Text)).ToString(); save2 = save3; break;
+                    default: break; 
+                }
+               
+          
             isTypingNumber=false;
+           
             isphay = true;
+            lblthongso.Text = "";
         }
         // các phép toán khác
         private void btnsoam_Click(object sender, EventArgs e)
@@ -294,7 +326,7 @@ namespace calculator
 
         private void btnphantram_Click(object sender, EventArgs e)
         {
-          
+           
             switch (savepheptinh)
             {
                 case "+": lblDisplay.Text = ((double.Parse(lblDisplay.Text)*100) + save1).ToString(); break;
