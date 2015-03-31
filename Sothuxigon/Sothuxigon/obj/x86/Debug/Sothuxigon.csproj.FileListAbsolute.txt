@@ -1,0 +1,15 @@
+C:\Users\vo_000\AppData\Local\Temporary Projects\Sothuxigon\bin\Debug\Sothuxigon.exe
+C:\Users\vo_000\AppData\Local\Temporary Projects\Sothuxigon\bin\Debug\Sothuxigon.pdb
+C:\Users\vo_000\AppData\Local\Temporary Projects\Sothuxigon\obj\x86\Debug\Sothuxigon.Form1.resources
+C:\Users\vo_000\AppData\Local\Temporary Projects\Sothuxigon\obj\x86\Debug\Sothuxigon.Properties.Resources.resources
+C:\Users\vo_000\AppData\Local\Temporary Projects\Sothuxigon\obj\x86\Debug\Sothuxigon.csproj.GenerateResource.Cache
+C:\Users\vo_000\AppData\Local\Temporary Projects\Sothuxigon\obj\x86\Debug\Sothuxigon.exe
+C:\Users\vo_000\AppData\Local\Temporary Projects\Sothuxigon\obj\x86\Debug\Sothuxigon.pdb
+E:\Winform\Sothuxigon\Sothuxigon\obj\x86\Debug\Sothuxigon.exe
+E:\Winform\Sothuxigon\Sothuxigon\obj\x86\Debug\Sothuxigon.pdb
+E:\Winform\Sothuxigon\Sothuxigon\bin\Debug\Sothuxigon.exe
+E:\Winform\Sothuxigon\Sothuxigon\bin\Debug\Sothuxigon.pdb
+E:\Winform\Sothuxigon\Sothuxigon\obj\x86\Debug\Sothuxigon.Form1.resources
+E:\Winform\Sothuxigon\Sothuxigon\obj\x86\Debug\Sothuxigon.Properties.Resources.resources
+E:\Winform\Sothuxigon\Sothuxigon\obj\x86\Debug\Sothuxigon.csproj.GenerateResource.Cache
+E:\Winform\Sothuxigon\Sothuxigon\obj\x86\Debug\Sothuxigon.csprojResolveAssemblyReference.cache

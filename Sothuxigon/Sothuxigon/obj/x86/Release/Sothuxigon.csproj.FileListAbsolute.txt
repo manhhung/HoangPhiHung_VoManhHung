@@ -1,0 +1,7 @@
+E:\Winform\Sothuxigon\Sothuxigon\bin\Release\Sothuxigon.exe
+E:\Winform\Sothuxigon\Sothuxigon\bin\Release\Sothuxigon.pdb
+E:\Winform\Sothuxigon\Sothuxigon\obj\x86\Release\Sothuxigon.Form1.resources
+E:\Winform\Sothuxigon\Sothuxigon\obj\x86\Release\Sothuxigon.Properties.Resources.resources
+E:\Winform\Sothuxigon\Sothuxigon\obj\x86\Release\Sothuxigon.csproj.GenerateResource.Cache
+E:\Winform\Sothuxigon\Sothuxigon\obj\x86\Release\Sothuxigon.exe
+E:\Winform\Sothuxigon\Sothuxigon\obj\x86\Release\Sothuxigon.pdb
