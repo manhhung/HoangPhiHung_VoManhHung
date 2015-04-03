@@ -1,0 +1,14 @@
+C:\Users\vo_000\AppData\Local\Temporary Projects\Photo\obj\x86\Debug\Photo.frMain.resources
+C:\Users\vo_000\AppData\Local\Temporary Projects\Photo\obj\x86\Debug\Photo.Properties.Resources.resources
+C:\Users\vo_000\AppData\Local\Temporary Projects\Photo\obj\x86\Debug\Photo.csproj.GenerateResource.Cache
+C:\Users\vo_000\AppData\Local\Temporary Projects\Photo\bin\Debug\Photo.exe
+C:\Users\vo_000\AppData\Local\Temporary Projects\Photo\bin\Debug\Photo.pdb
+C:\Users\vo_000\AppData\Local\Temporary Projects\Photo\obj\x86\Debug\Photo.exe
+C:\Users\vo_000\AppData\Local\Temporary Projects\Photo\obj\x86\Debug\Photo.pdb
+E:\Winform\Photo\Photo\obj\x86\Debug\Photo.exe
+E:\Winform\Photo\Photo\obj\x86\Debug\Photo.pdb
+E:\Winform\Photo\Photo\bin\Debug\Photo.exe
+E:\Winform\Photo\Photo\bin\Debug\Photo.pdb
+E:\Winform\Photo\Photo\obj\x86\Debug\Photo.frMain.resources
+E:\Winform\Photo\Photo\obj\x86\Debug\Photo.Properties.Resources.resources
+E:\Winform\Photo\Photo\obj\x86\Debug\Photo.csproj.GenerateResource.Cache
