@@ -41,9 +41,14 @@
             this.mnuImageScale = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuImageStretch = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuImageActual = new System.Windows.Forms.ToolStripMenuItem();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.sttInfo = new System.Windows.Forms.ToolStripStatusLabel();
+            this.sttImageSize = new System.Windows.Forms.ToolStripStatusLabel();
+            this.sttAlbumPos = new System.Windows.Forms.ToolStripStatusLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pbxPhoto)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.ctxMenuphoto.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pbxPhoto
@@ -122,6 +127,7 @@
             this.mnuImage.Name = "mnuImage";
             this.mnuImage.Size = new System.Drawing.Size(107, 22);
             this.mnuImage.Text = "&Image";
+            this.mnuImage.DropDownOpening += new System.EventHandler(this.mnuImage_DropDownOpening);
             this.mnuImage.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.ProcessPhoto);
             // 
             // mnuImageScale
@@ -147,11 +153,53 @@
             this.mnuImageActual.Tag = "Normal";
             this.mnuImageActual.Text = "&Actual Size";
             // 
+            // statusStrip1
+            // 
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.sttInfo,
+            this.sttImageSize,
+            this.sttAlbumPos});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 307);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(369, 24);
+            this.statusStrip1.TabIndex = 4;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // sttInfo
+            // 
+            this.sttInfo.AutoSize = false;
+            this.sttInfo.Name = "sttInfo";
+            this.sttInfo.Size = new System.Drawing.Size(253, 19);
+            this.sttInfo.Spring = true;
+            this.sttInfo.Text = "Desc";
+            this.sttInfo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // sttImageSize
+            // 
+            this.sttImageSize.BorderSides = ((System.Windows.Forms.ToolStripStatusLabelBorderSides)((((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Top)
+                        | System.Windows.Forms.ToolStripStatusLabelBorderSides.Right)
+                        | System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom)));
+            this.sttImageSize.BorderStyle = System.Windows.Forms.Border3DStyle.SunkenInner;
+            this.sttImageSize.Name = "sttImageSize";
+            this.sttImageSize.Size = new System.Drawing.Size(42, 19);
+            this.sttImageSize.Text = "W x H";
+            // 
+            // sttAlbumPos
+            // 
+            this.sttAlbumPos.BorderSides = ((System.Windows.Forms.ToolStripStatusLabelBorderSides)((((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Top)
+                        | System.Windows.Forms.ToolStripStatusLabelBorderSides.Right)
+                        | System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom)));
+            this.sttAlbumPos.BorderStyle = System.Windows.Forms.Border3DStyle.SunkenInner;
+            this.sttAlbumPos.Name = "sttAlbumPos";
+            this.sttAlbumPos.Size = new System.Drawing.Size(28, 19);
+            this.sttAlbumPos.Text = "1/1";
+            // 
             // frMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(369, 331);
+            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.pbxPhoto);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -161,6 +209,8 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ctxMenuphoto.ResumeLayout(false);
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -180,6 +230,10 @@
         private System.Windows.Forms.ToolStripMenuItem mnuImageScale;
         private System.Windows.Forms.ToolStripMenuItem mnuImageStretch;
         private System.Windows.Forms.ToolStripMenuItem mnuImageActual;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel sttInfo;
+        private System.Windows.Forms.ToolStripStatusLabel sttImageSize;
+        private System.Windows.Forms.ToolStripStatusLabel sttAlbumPos;
     }
 }
 

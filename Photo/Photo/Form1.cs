@@ -16,7 +16,7 @@ namespace Photo
             InitializeComponent();
         }
 
-       
+
         private void mnuLoad_Click(object sender, EventArgs e)
         {
             OpenFileDialog dlg = new OpenFileDialog();
@@ -29,6 +29,7 @@ namespace Photo
                 try //kiểm tra phần mở rộng
                 {
                     pbxPhoto.Image = new Bitmap(dlg.OpenFile());
+                    SetstatusStrip(dlg.FileName);
                 }
                 catch (ArgumentException ex)
                 {
@@ -48,6 +49,33 @@ namespace Photo
             {
                 pbxPhoto.SizeMode = (PictureBoxSizeMode)
                     Enum.Parse(typeof(PictureBoxSizeMode), enumVal);
+            }
+        }
+
+        private void mnuImage_DropDownOpening(object sender, EventArgs e)
+        {
+            ToolStripDropDownItem parent = (ToolStripDropDownItem)sender;
+            if (parent != null)
+            {
+                string enumVal = pbxPhoto.SizeMode.ToString();
+                foreach (ToolStripMenuItem item in parent.DropDownItems)
+                {
+                    item.Enabled = (pbxPhoto.Image != null);
+                    item.Checked = item.Tag.Equals(enumVal);
+                }
+            }
+        }
+        private void SetstatusStrip(string path)
+        {
+            if (pbxPhoto.Image != null)
+            {
+                sttInfo.Text = path;
+                sttImageSize.Text = string.Format("{0:#} x {1:#}", pbxPhoto.Image.Width, pbxPhoto.Image.Height);
+            }
+
+            else
+            {
+
             }
         }
     }
