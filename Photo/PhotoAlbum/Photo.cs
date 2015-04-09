@@ -6,13 +6,14 @@ using System.Drawing;
 
 namespace PhotoAlbum
 {
-    class Photo
+    class Photo : IDisposable
     {
         private string fileName;
         public string FileName
         {
             get { return this.fileName; }
         }
+
         private Bitmap bitmap;
         public Bitmap Image
         {
@@ -23,35 +24,40 @@ namespace PhotoAlbum
                 return bitmap;
             }
         }
+
         private string caption = "";
         public string Caption
         {
             get { return caption; }
             set
             {
-            if (caption != value)
-            {
-                caption = value;
-                HasChanged = true;
-            }
+                if (caption != value)
+                {
+                    caption = value;
+                    HasChanged = true;
+                }
             }
 
         }
+
         private string photographer = "";
         public string Photographer
         {
             get { return photographer; }
-            set {
+            set
+            {
                 if (photographer != value)
                 {
                     photographer = value;
                     HasChanged = true;
-                }}
+                }
+            }
         }
+
         private DateTime dateTaken = DateTime.Now;
         public DateTime DateTaken
         {
-         get { return dateTaken; }
+            get { return dateTaken; }
             set
             {
                 if (dateTaken != value)
@@ -61,19 +67,21 @@ namespace PhotoAlbum
                 }
             }
         }
-       private string notes = "";
+
+        private string notes = "";
         public string Notes
         {
-            get { return notes;}
+            get { return notes; }
             set
             {
-                if ( notes != value)
+                if (notes != value)
                 {
                     notes = value;
                     HasChanged = true;
                 }
             }
         }
+
         private bool hasChanged = true;
         public bool HasChanged
         {
@@ -81,4 +89,34 @@ namespace PhotoAlbum
             set { hasChanged = value; }
 
         }
+
+        public Photo(string fileName)
+        {
+            this.fileName = fileName;
+            bitmap = null;
+            caption = System.IO.Path.GetFileNameWithoutExtension(fileName);
+
+        }
+        public void Dispose()
+        {
+            if (bitmap != null)
+            {
+                bitmap.Dispose();
+                bitmap = null;
+            }
+        }
+
+        public override string  ToString()
+        {
+            return fileName;
+        }
+        public override int GetHashCode()
+        {
+            return ToString().GetHashCode();
+        }
+        public override bool Equals(object obj)
+        {
+            return GetHashCode() == obj.GetHashCode();
+        }
+    }
 }

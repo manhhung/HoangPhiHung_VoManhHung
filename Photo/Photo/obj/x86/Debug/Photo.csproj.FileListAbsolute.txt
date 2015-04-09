@@ -12,3 +12,4 @@ E:\Winform\Photo\Photo\bin\Debug\Photo.pdb
 E:\Winform\Photo\Photo\obj\x86\Debug\Photo.frMain.resources
 E:\Winform\Photo\Photo\obj\x86\Debug\Photo.Properties.Resources.resources
 E:\Winform\Photo\Photo\obj\x86\Debug\Photo.csproj.GenerateResource.Cache
+E:\Winform\Photo\Photo\obj\x86\Debug\Photo.csprojResolveAssemblyReference.cache
